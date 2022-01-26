@@ -1,0 +1,90 @@
+@import "./../../../styles.scss";
+.proposito {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 96px 10rem;
+
+  @include phone{
+    padding: 96px 2rem;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    padding-top: 74px;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a3713d;
+  }
+}
+.items-propositos {
+  display: flex;
+  flex-direction: row;
+  padding-top: 98px;
+
+  @include phone{
+    flex-direction: column;
+  }
+
+  .item-prop-1 {
+    background-color: #4f6438;
+    color: #fff;
+    padding: 2rem;
+    margin-right: 1rem;
+    @include phone{
+        margin-right: 0rem;
+      }
+    img{
+        padding-bottom: 2rem;
+    }
+    p {
+      color: #fff;
+      font-weight: normal;
+      padding-top: 1rem;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .item-prop-2 {
+    background-color: #95b14b;
+    color: #fff;
+    padding: 2rem;
+    margin-right: 1rem;
+    @include phone{
+        margin-right: 0rem;
+      }
+    img{
+        padding-bottom: 2rem;
+    }
+    p {
+      color: #fff;
+      font-weight: normal;
+      padding-top: 1rem;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .item-prop-3 {
+    background-color: #b56b2c;
+    color: #fff;
+    padding: 2rem;
+    img{
+        padding-bottom: 2rem;
+    }
+    p {
+      color: #fff;
+      font-weight: normal;
+      padding-top: 1rem;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "./../../../styles.scss";
+.colabora {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 172px 10rem;
+  align-items: center;
+  @include phone{
+      padding: 172px 2rem;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+  p {
+    padding-top: 74px;
+    padding-bottom: 64px;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #a3713d;
+  }
+}
+
+.btn-primary {
+  background-color: #ff3924;
+  color: #fff;
+  padding: 12px 64px;
+  font-size: 28px;
+  border-style: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #db1a06;
+  }
+}
+
+a {
+  text-decoration: none;
+}

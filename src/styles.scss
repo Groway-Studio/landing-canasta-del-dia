@@ -1,0 +1,69 @@
+//-------- MEDIAQUERIES --------
+$tablet: 600px;
+$desktop: 900px;
+$desktop_m: 1680px;
+$desktop_xl: 1920px;
+
+/*-------- MIXINS MEDIA QUERIES = @MEDIA @CONTENT --------
+Para usarlas sólo hay que situarse en la regla SASS correspondiente y poner, por ejemplo:
+    @include phone {
+        flex-direction: column;
+    }
+*/
+@mixin phone {
+  @media (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop_hd {
+  @media (min-width: #{$desktop_m}) and (max-width: #{$desktop_xl}) {
+    @content;
+  }
+}
+
+@mixin devices {
+  @media (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fbf0d8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  @include phone {
+    width: 100%;
+  }
+}
+.container-full {
+  width: 100%;
+  background-color: #fff;
+}

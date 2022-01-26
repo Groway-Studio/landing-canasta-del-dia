@@ -1,0 +1,105 @@
+@import "./../../../../styles.scss";
+
+.trama-orange img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include phone {
+    display: none;
+  }
+}
+.trama-pepino img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @include phone {
+    display: none;
+  }
+}
+.trama-aji img {
+  position: absolute;
+  right: 0;
+  top: 246px;
+  @include phone {
+    display: none;
+  }
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 90px;
+  background-color: #fbf0d8;
+  margin-bottom: 42px;
+
+  @include phone {
+    padding-top: 42px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .col-logo {
+    width: 35%;
+    text-align: right;
+    @include phone {
+      width: 50%;
+      margin-top: 2rem;
+    }
+  }
+  .col-text {
+    width: 65%;
+    text-align: center;
+    margin-top: 2rem;
+    h1 {
+      color: #f0b144;
+      font-size: 2.5rem;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: #a28d61;
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+}
+
+.nabvar {
+  width: 100%;
+  background-color: #ff3924;
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+    .item-menu {
+      width: 33.3%;
+      display: flex;
+      padding: 24px 0;
+      justify-content: center;
+      span {
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-family: HelveticaNeue;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          img{
+              display: none;
+          }
+          @include phone {
+            font-size: 12pt;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 20pt;
+                display: flex;
+                margin-bottom: .5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
