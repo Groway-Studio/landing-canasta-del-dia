@@ -11,6 +11,7 @@ import { PropositoComponent } from './components/proposito/proposito.component';
 import { ColaboraComponent } from './components/colabora/colabora.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { PatrocinioComponent } from './components/patrocinio/patrocinio.component';
+import { RrssComponent } from './components/shared/rrss/rrss.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PatrocinioComponent } from './components/patrocinio/patrocinio.componen
     PropositoComponent,
     ColaboraComponent,
     EquipoComponent,
-    PatrocinioComponent
+    PatrocinioComponent,
+    RrssComponent
   ],
   imports: [
     BrowserModule,
