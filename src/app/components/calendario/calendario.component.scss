@@ -4,28 +4,40 @@
   display: flex;
   align-items: center;
   padding: 103px 0;
+  display: flex;
+  flex-direction: column;
+
   @include phone {
     display: flex;
     flex-direction: column;
   }
-  .col-1 {
-    width: 30%;
+  .calendar-img{
+    width: 100%;
+    @include tablet {
+     width: 100%;
+    }
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      color: #1C6B30;
+      font-family: Righteous;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 75px;
+      margin-bottom: 37px;
+    }
     @include phone {
       width: 100%;
       text-align: center;
       padding-bottom: 2rem;
     }
   }
-  .col-2 {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @include phone {
-        width: 90%;
-    }
-  }
+ 
 }
 
 .tabs {

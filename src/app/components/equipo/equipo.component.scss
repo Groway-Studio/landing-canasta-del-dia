@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 96px 10rem;
+  padding: 36px 10rem 96px;
   @include phone{
     padding: 96px 2rem;
   }
@@ -12,7 +12,6 @@
     font-size: 32px;
   }
   p {
-    padding-top: 74px;
     font-size: 18px;
     font-weight: bold;
     font-stretch: normal;
@@ -38,7 +37,8 @@
     align-items: center;
     padding-right: 42px;
     @include phone{
-        padding-right: 0px; 
+        padding-right: 0px;
+        flex-direction: column; 
     }
     .social-item {
       padding-top: 1rem;

@@ -15,10 +15,21 @@ footer{
         align-items: center;
         @include phone{
             padding-top: 2rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1.5rem;
         }
         img{
             width: 32px;
             margin-right: 2rem;
+           
+            @include phone{
+                width: 50%;
+                margin-bottom: 2rem;
+             
+            }
         }
     }
 }
