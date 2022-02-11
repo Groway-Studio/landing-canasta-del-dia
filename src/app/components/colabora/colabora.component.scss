@@ -33,6 +33,21 @@
   }
 }
 
+.green-bg{
+  position: absolute;
+  left: 0;
+  width: 20%;
+  @include phone{
+    width: 40%;
+  }
+}
+.verdura-bg{
+  position: absolute;
+  right: 0;
+  @include phone{
+    width: 40%;
+  }
+}
 .btn-primary {
   background-color: #ff3924;
   color: #fff;

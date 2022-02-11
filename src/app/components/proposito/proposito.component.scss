@@ -6,15 +6,15 @@
   text-align: center;
   padding: 96px 10rem;
   width: 100%;
-  @include tablet{
+  @include tablet {
     width: 100%;
   }
-  @include phone{
+  @include phone {
     padding: 96px 2rem;
   }
 
   h1 {
-    color: #1C6B30;
+    color: #1c6b30;
     font-family: Righteous;
     font-weight: normal;
     font-size: 60px;
@@ -29,7 +29,21 @@
     line-height: 28px;
     letter-spacing: normal;
     text-align: center;
-    color: #A3713D;
+    color: #a3713d;
+  }
+}
+.carrot-bg{
+  position: absolute;
+  left: 0;
+  @include phone{
+    width: 25%;
+  }
+}
+.tomato-bg{
+  position: absolute;
+  right: 0;
+  @include phone{
+    width: 40%;
   }
 }
 .items-propositos {
@@ -40,22 +54,22 @@
   flex-wrap: wrap;
   box-sizing: border-box;
 
-  @include phone{
+  @include phone {
     flex-direction: column;
   }
 
   .item-prop-1 {
-    background-color: #F9B92B;
+    background-color: #f9b92b;
     color: #fff;
     padding: 2rem;
     width: 48%;
     margin-bottom: 2rem;
-    @include phone{
-        margin-right: 0rem;
-        width: 100%;
-      }
-    img{
-        padding-bottom: 2rem;
+    @include phone {
+      margin-right: 0rem;
+      width: 100%;
+    }
+    img {
+      padding-bottom: 2rem;
     }
     p {
       color: #fff;
@@ -67,16 +81,16 @@
   }
   .item-prop-2 {
     width: 48%;
-    background-color: #8AB133;
+    background-color: #8ab133;
     color: #fff;
     padding: 2rem;
     margin-bottom: 2rem;
-    @include phone{
-        margin-right: 0rem;
-        width: 100%;
-      }
-    img{
-        padding-bottom: 2rem;
+    @include phone {
+      margin-right: 0rem;
+      width: 100%;
+    }
+    img {
+      padding-bottom: 2rem;
     }
     p {
       color: #fff;
@@ -91,12 +105,12 @@
     background-color: #634747;
     color: #fff;
     padding: 2rem;
-    @include phone{
+    @include phone {
       width: 100%;
       margin-bottom: 2rem;
     }
-    img{
-        padding-bottom: 2rem;
+    img {
+      padding-bottom: 2rem;
     }
     p {
       color: #fff;
@@ -108,14 +122,14 @@
   }
   .item-prop-4 {
     width: 48%;
-    background-color: #EE834F;
+    background-color: #ee834f;
     color: #fff;
     padding: 2rem;
-    @include phone{
+    @include phone {
       width: 100%;
     }
-    img{
-        padding-bottom: 2rem;
+    img {
+      padding-bottom: 2rem;
     }
     p {
       color: #fff;

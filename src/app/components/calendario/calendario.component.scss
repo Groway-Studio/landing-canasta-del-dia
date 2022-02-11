@@ -13,8 +13,20 @@
   }
   .calendar-img{
     width: 100%;
+    @include phone{
+      display: none;
+    }
     @include tablet {
      width: 100%;
+    }
+  }
+  .calendar-mobile-img{
+    display: none;
+    @include phone{
+      display: block;
+    }
+    @include tablet {
+      display: none;
     }
   }
   .row {
@@ -30,6 +42,10 @@
       font-size: 60px;
       line-height: 75px;
       margin-bottom: 37px;
+      @include phone {
+        font-size: 40px;
+        line-height: 48px;
+      }
     }
     @include phone {
       width: 100%;

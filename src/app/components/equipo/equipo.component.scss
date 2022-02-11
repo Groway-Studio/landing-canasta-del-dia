@@ -22,6 +22,22 @@
     color: #a3713d;
   }
 }
+.ajibrocoli-bg{
+  position: absolute;
+  right: -10%;
+  @include phone{
+    width: 30%;
+    right: 0;
+  }
+}
+.verdura3-bg{
+  position: absolute;
+  left: 0;
+  @include phone{
+    width: 40%;
+    left: -15%;
+  }
+}
 .people {
   display: flex;
   flex-direction: row;
