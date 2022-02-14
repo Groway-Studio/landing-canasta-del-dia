@@ -13,6 +13,9 @@ import { EquipoComponent } from './components/equipo/equipo.component';
 import { PatrocinioComponent } from './components/patrocinio/patrocinio.component';
 import { RrssComponent } from './components/shared/rrss/rrss.component';
 
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
+import { ShareIconsModule } from 'ngx-sharebuttons/icons';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,11 @@ import { RrssComponent } from './components/shared/rrss/rrss.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ShareButtonsModule.withConfig({
+      debug: true
+    }),
+    ShareIconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

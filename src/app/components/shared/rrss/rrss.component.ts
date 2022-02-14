@@ -11,5 +11,4 @@ export class RrssComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
