@@ -52,6 +52,11 @@
     flex-direction: column;
     align-items: center;
     padding-right: 42px;
+    img{
+      border-radius: 120px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
     @include phone{
         padding-right: 0px;
         flex-direction: column; 
@@ -59,15 +64,30 @@
     .social-item {
       padding-top: 1rem;
       width: 40px;
+      color: #707070;
     }
   }
   .profile {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding-top: 2rem;
     text-align: left;
+    a .social-item {
+      padding-top: 1rem;
+      width: 32px;
+      color: #707070!important;
+  
+    }
     @include phone{
         text-align: center;
+    }
+    
+    p{
+      margin-top: 1rem;
+      text-align: left;
+      font-size: .9rem;
+      line-height: 1.2rem;
     }
     h2 {
       color: #707070;
@@ -78,6 +98,7 @@
 .people-right {
   display: flex;
   justify-content: flex-end;
+  margin-top: 2rem;
   @include phone{
       padding-top: 4rem;
     flex-direction: column-reverse;
@@ -88,21 +109,34 @@
     flex-direction: column;
     align-items: center;
     padding-left: 42px;
+    img{
+      border-radius: 120px;
+    }
     @include phone{
         padding-left: 0px; 
     }
-    .social-item {
-      padding-top: 1rem;
-      width: 40px;
-    }
+  
   }
   .profile {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     text-align: left;
+   align-items: flex-end;
+   a .social-item {
+    padding-top: 1rem;
+    width: 32px;
+    color: #707070!important;
+
+  }
     @include phone{
         text-align: center;
+    }
+    p{
+      margin-top: 1rem;
+      text-align: right;
+      font-size: .9rem;
+      line-height: 1.2rem;
     }
     h2 {
       color: #707070;

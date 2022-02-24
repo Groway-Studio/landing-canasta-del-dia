@@ -10,14 +10,11 @@
       padding: 172px 2rem;
   }
   h1 {
-    font-size: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
+    color: #1c6b30;
+    font-family: Righteous;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 75px;
   }
   p {
     padding-top: 74px;
@@ -55,6 +52,8 @@
   font-size: 28px;
   border-style: none;
   cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
   &:hover {
     background-color: #db1a06;
   }

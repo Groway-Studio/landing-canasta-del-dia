@@ -69,14 +69,18 @@
   .tab-item {
     padding: 12px 24px;
     cursor: pointer;
+    margin-right: .5rem;
+
     &:hover {
       background-color: #c96e45;
       color: #fff;
+      border-radius: 8px;
     }
   }
   .tab-item.active {
     background-color: #c96e45;
     color: #fff;
+    border-radius: 8px;
   }
 }
 .tab-content {
