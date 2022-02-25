@@ -4,37 +4,24 @@
       <h2>Calendario de temporada</h2>
     </div>
     <div class="row">
-      <!-- <div class="tabs">
-        <div class="tab-item ">Enero</div>
-        <div class="tab-item active">Febrero</div>
-        <div class="tab-item">Marzo</div>
-      </div> -->
+      <mat-tab-group animationDuration="0ms" [selectedIndex]="activeLink">
 
-      <mat-tab-group animationDuration="0ms">
-        
-        <mat-tab  *ngFor="let key of meses" class="mat-tab-label-active" label={{key.month}}  >
+        <mat-tab *ngFor="let key of meses" class="mat-tab-label-active"  label={{key.month}} >
           <div class="text-center">
-
             <img src={{key.images}} class="calendar-img" alt="" />
             <br>
-            <img src="{{key.img_mobile}}" class="calendar-mobile-img"  alt="">
+            <img src="{{key.img_mobile}}" class="calendar-mobile-img" alt="">
             <br>
             <div class="p-box" *ngIf="key.images.length === 0 ">
-              <p >Pronto estará disponible este mes.</p>
+              <p>Pronto estará disponible este mes.</p>
             </div>
             <div *ngIf="key.images.length > 0 ">
               <button class="btn btn-primary" mat-button (click)="openDialog()">Compartir</button>
             </div>
           </div>
         </mat-tab>
-       
+
       </mat-tab-group>
-
-
-      <!-- <div class="tab-content">
-        
-        <img src="assets/febrero-mobile.png" class="calendar-mobile-img" alt="" />
-      </div> -->
     </div>
   </div>
 </div>
