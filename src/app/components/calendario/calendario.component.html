@@ -14,9 +14,11 @@
         
         <mat-tab  *ngFor="let key of meses" class="mat-tab-label-active" label={{key.month}}  >
           <div class="text-center">
-            <img src={{key.images}} class="calendar-img" alt="" />
 
-          
+            <img src={{key.images}} class="calendar-img" alt="" />
+            <br>
+            <img src="{{key.img_mobile}}" class="calendar-mobile-img"  alt="">
+            <br>
             <div class="p-box" *ngIf="key.images.length === 0 ">
               <p >Pronto estará disponible este mes.</p>
             </div>

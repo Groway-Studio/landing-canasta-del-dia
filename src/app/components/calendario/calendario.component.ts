@@ -15,11 +15,13 @@ export class CalendarioComponent implements OnInit {
     {
       month : "Enero",
       images : "assets/febrero-calendar.png",
+      img_mobile : "assets/febrero-mobile.png",
       active: "false"
     },
     {
       month : "Febrero",
       images : "assets/febrero-calendar.png",
+      img_mobile : "assets/febrero-mobile.png",
       active: "true"
     },
     {
