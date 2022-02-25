@@ -12,10 +12,13 @@ import { ColaboraComponent } from './components/colabora/colabora.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { PatrocinioComponent } from './components/patrocinio/patrocinio.component';
 import { RrssComponent } from './components/shared/rrss/rrss.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule} from '@angular/material/dialog';
+import { ShareCalendarComponent } from './components/shared/share-calendar/share-calendar.component';
+
 
 @NgModule({
   declarations: [
@@ -28,12 +31,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ColaboraComponent,
     EquipoComponent,
     PatrocinioComponent,
-    RrssComponent
+    RrssComponent,
+    ShareCalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatTabsModule,
+    MatDialogModule,
     ShareButtonsModule.withConfig({
       debug: true
     }),

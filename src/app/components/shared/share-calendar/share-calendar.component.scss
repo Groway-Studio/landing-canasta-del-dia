@@ -1,0 +1,113 @@
+@import "./../../../../styles.scss";
+
+.share-calendar {
+  background-color: #fbf0d8;
+  padding: 3rem 1rem;
+}
+
+.fb,
+.ig,
+.wsp {
+  color: #000;
+  // background-color: #000;
+  width: 32px;
+  z-index: 1000;
+  cursor: pointer;
+  @include phone {
+    width: 28px;
+  }
+}
+._2vmz {
+  display: none !important;
+}
+.clearfix {
+  &::after {
+    display: none;
+    background-color: red;
+  }
+}
+
+.rrss {
+  position: fixed;
+  width: 75px;
+  top: 55%;
+  left: 0px;
+  z-index: 1000;
+  background-color: #56a98c;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 16px 16px 0;
+  text-align: center;
+  @include phone {
+    top: 35%;
+    width: 76px;
+    padding: 0.5rem;
+  }
+  span {
+    font-size: 12px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: #f0f0f0;
+    font-weight: 600;
+    @include phone {
+      font-size: 10px;
+    }
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.box-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .img-download {
+    margin-bottom: 1rem;
+  }
+}
+.box-share {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .label-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span{
+      padding-top: .4rem;
+      font-size: 11px;
+      color: #fff;
+    }
+  }
+}
+.box-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin: 2rem 0;
+    padding: 0 4rem;
+    color: #4F4600;
+  }
+}
+
+.sb-group-share {
+  background-color: #ff3924;
+  margin-left: 1rem !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.54);
+  border-radius: 10px;
+  padding: 0.5rem 0 !important;
+  margin: 4rem 0;
+}

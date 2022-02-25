@@ -11,42 +11,21 @@
       </div> -->
 
       <mat-tab-group animationDuration="0ms">
-        <mat-tab label="Enero">
+        
+        <mat-tab  *ngFor="let key of meses" class="mat-tab-label-active" label={{key.month}}  >
+          <div class="text-center">
+            <img src={{key.images}} class="calendar-img" alt="" />
 
+          
+            <div class="p-box" *ngIf="key.images.length === 0 ">
+              <p >Pronto estará disponible este mes.</p>
+            </div>
+            <div *ngIf="key.images.length > 0 ">
+              <button class="btn btn-primary" mat-button (click)="openDialog()">Compartir</button>
+            </div>
+          </div>
         </mat-tab>
-        <mat-tab label="Febrero" >
-          <img src="assets/febrero-calendar.png" class="calendar-img" alt="" />
-        </mat-tab>
-        <mat-tab label="Marzo">
-
-        </mat-tab>
-        <mat-tab label="Abril">
-
-        </mat-tab>
-        <mat-tab label="Mayo">
-
-        </mat-tab>
-        <mat-tab label="Junio">
-
-        </mat-tab>
-        <mat-tab label="Julio">
-
-        </mat-tab>
-        <mat-tab label="Agosto">
-
-        </mat-tab>
-        <mat-tab label="Septiembre">
-
-        </mat-tab>
-        <mat-tab label="Octubre">
-
-        </mat-tab>
-        <mat-tab label="Noviembre">
-
-        </mat-tab>
-        <mat-tab label="Diciembre">
-
-        </mat-tab>
+       
       </mat-tab-group>
 
 
