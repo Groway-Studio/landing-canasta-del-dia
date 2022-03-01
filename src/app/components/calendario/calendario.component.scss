@@ -34,19 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    h2{
-      color: #1C6B30;
-      font-family: Righteous;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 60px;
-      line-height: 75px;
-      margin-bottom: 37px;
-      @include phone {
-        font-size: 40px;
-        line-height: 48px;
-      }
-    }
+
     @include phone {
       width: 100%;
       text-align: center;

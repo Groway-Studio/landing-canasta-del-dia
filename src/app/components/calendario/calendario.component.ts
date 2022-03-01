@@ -15,8 +15,8 @@ export class CalendarioComponent implements OnInit {
     {
       id : 1,
       month : "Enero",
-      images : "assets/febrero-calendar.png",
-      img_mobile : "assets/febrero-mobile.png",
+      images : "",
+      img_mobile : "",
       active: "false"
     },
     {
