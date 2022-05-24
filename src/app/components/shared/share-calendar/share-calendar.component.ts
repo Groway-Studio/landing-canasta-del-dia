@@ -8,13 +8,12 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./share-calendar.component.scss']
 })
 export class ShareCalendarComponent implements OnInit {
-  month = this.data.getCurrentMonth.split('/')[1]
+  month = this.data.getCurrentMonth.split('/')[2];
   constructor(@Inject(MAT_DIALOG_DATA) public data: {getCurrentMonth: string}) {}
   downloadImg(){
     // saveAs(url, name+'.png');
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

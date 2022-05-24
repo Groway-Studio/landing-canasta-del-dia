@@ -103,8 +103,11 @@ export class CalendarioComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
   openDialog(month: number) {
+    const currentMonth = this.months[month].images.split('/');
+    const getMonthImageUrl = currentMonth[0] + '/share-images/' + currentMonth[1].split('.')[0] + '.png';
+
     const dialogRef = this.dialog.open(ShareCalendarComponent, {
-      data: {getCurrentMonth: this.months[month].images}
+      data: {getCurrentMonth: getMonthImageUrl}
     });
 
     dialogRef.afterClosed().subscribe(result => {

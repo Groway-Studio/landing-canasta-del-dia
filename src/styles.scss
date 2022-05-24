@@ -123,6 +123,11 @@ p {
   &:hover {
     background-color: #db1a06;
   }
+
+  @include phone {
+    width: 100%;
+  }
+
 }
 a {
   text-decoration: none;
@@ -144,6 +149,13 @@ fa-icon{
   border-radius: 8px;
   width: 32px!important;
   border-radius: 1px solid #000!important;
+}
+
+#cdk-overlay-0 {
+  @include phone {
+    max-width: 85vh !important;
+    padding: 15px;
+  }
 }
 
 h2{
