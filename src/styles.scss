@@ -151,10 +151,11 @@ fa-icon{
   border-radius: 1px solid #000!important;
 }
 
-#cdk-overlay-0 {
+#cdk-overlay-0,
+.cdk-overlay-pane {
   @include phone {
-    max-width: 85vh !important;
-    padding: 15px;
+    max-width: 90vh !important;
+    padding: 10px;
   }
 }
 

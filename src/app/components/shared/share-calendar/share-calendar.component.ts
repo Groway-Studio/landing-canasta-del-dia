@@ -14,6 +14,10 @@ export class ShareCalendarComponent implements OnInit {
     // saveAs(url, name+'.png');
   }
 
+  shareImage () {
+    return "https://lacanastadehoy.com/" + this.data.getCurrentMonth;
+  }
+
   ngOnInit(): void {}
 
 }
