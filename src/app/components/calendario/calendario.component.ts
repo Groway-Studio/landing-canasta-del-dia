@@ -13,7 +13,7 @@ export class CalendarioComponent implements OnInit {
 
   currentMonth = new Date().getMonth()
 
-  meses = [
+  months = [
     {
       id : 1,
       month : "Enero",
@@ -101,11 +101,11 @@ export class CalendarioComponent implements OnInit {
 
   ]
 
-
-
   constructor(public dialog: MatDialog) { }
-  openDialog() {
-    const dialogRef = this.dialog.open(ShareCalendarComponent);
+  openDialog(month: number) {
+    const dialogRef = this.dialog.open(ShareCalendarComponent, {
+      data: {getCurrentMonth: this.months[month].images}
+    });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
