@@ -18,6 +18,11 @@ export class ShareCalendarComponent implements OnInit {
     return "https://lacanastadehoy.com/" + this.data.getCurrentMonth;
   }
 
+  getDescription() {
+    const month = this.month.split('.')[0];
+    return "La Canasta de Hoy - Calendario de Temporada " + month;
+  }
+
   ngOnInit(): void {}
 
 }
