@@ -19,8 +19,7 @@ export class ShareCalendarComponent implements OnInit {
   shareImage() {
     const pathCurrentMonth = `${this.data.getCurrentMonth.slice(0, -3)}pdf`;
 
-    console.log(pathCurrentMonth);
-    console.log(this.month);
+
 
     return `https://lacanastadehoy.com//${pathCurrentMonth}`;
   }

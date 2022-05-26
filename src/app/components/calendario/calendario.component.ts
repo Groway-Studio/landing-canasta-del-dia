@@ -110,11 +110,7 @@ export class CalendarioComponent implements OnInit {
       data: { getCurrentMonth: getMonthImageUrl },
     });
 
-    console.log(currentMonth, getMonthImageUrl);
-
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
-    });
+    dialogRef.afterClosed().subscribe();
   }
 
   ngOnInit(): void {}
