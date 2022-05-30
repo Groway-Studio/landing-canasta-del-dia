@@ -1,11 +1,23 @@
 @import "./../../../styles.scss";
+
+#elequipo {
+  @include tablet {
+    width: 100%;
+  }
+}
+
 .equipo {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   padding: 36px 10rem 96px;
-  @include phone{
+
+  @include tablet {
+    padding: 3.5rem;
+  }
+
+  @include phone {
     padding: 96px 2rem;
   }
   h1 {
@@ -22,21 +34,34 @@
     color: #a3713d;
   }
 }
-.ajibrocoli-bg{
+.ajibrocoli-bg {
   position: absolute;
-  right: 0%;
-  width: 25%;
-  @include phone{
-    width: 40%;
-    right: 0;
+  right: 0;
+  width: 20%;
+
+  @include tablet {
+    width: 20%;
+  }
+
+  @include phone {
+    width: 30%;
+    margin-top: 0;
   }
 }
-.verdura3-bg{
+.verdura3-bg {
   position: absolute;
   left: 0;
-  @include phone{
+  width: 20%;
+
+  @include tablet {
     width: 20%;
-    left: 80%!important;
+    margin-top: 5rem;
+  }
+
+  @include phone {
+    width: 30%;
+    left: 65%;
+    margin-top: 4rem;
   }
 }
 .people {
@@ -44,7 +69,7 @@
   flex-direction: row;
   justify-content: start;
   padding-top: 64px;
-  @include phone{
+  @include phone {
     flex-direction: column;
     justify-content: center;
   }
@@ -53,14 +78,14 @@
     flex-direction: column;
     align-items: center;
     padding-right: 42px;
-    img{
+    img {
       border-radius: 120px;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
     }
-    @include phone{
-        padding-right: 0px;
-        flex-direction: column; 
+    @include phone {
+      padding-right: 0px;
+      flex-direction: column;
     }
     .social-item {
       padding-top: 1rem;
@@ -77,20 +102,18 @@
     a .social-item {
       padding-top: 1rem;
       width: 32px;
-      color: #707070!important;
-  
+      color: #707070 !important;
     }
-    @include phone{
-        text-align: center;
+    @include phone {
+      text-align: center;
     }
-    
-    p{
+
+    p {
       margin-top: 1rem;
       text-align: left;
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1.2rem;
     }
-  
   }
 }
 
@@ -98,8 +121,8 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
-  @include phone{
-      padding-top: 4rem;
+  @include phone {
+    padding-top: 4rem;
     flex-direction: column-reverse;
     justify-content: center;
   }
@@ -108,33 +131,31 @@
     flex-direction: column;
     align-items: center;
     padding-left: 42px;
-    img{
+    img {
       border-radius: 120px;
     }
-    @include phone{
-        padding-left: 0px; 
+    @include phone {
+      padding-left: 0px;
     }
-  
   }
   .profile {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     text-align: left;
-   align-items: flex-end;
-   a .social-item {
-    padding-top: 1rem;
-    width: 32px;
-    color: #707070!important;
-
-  }
-    @include phone{
-        text-align: center;
+    align-items: flex-end;
+    a .social-item {
+      padding-top: 1rem;
+      width: 32px;
+      color: #707070 !important;
     }
-    p{
+    @include phone {
+      text-align: center;
+    }
+    p {
       margin-top: 1rem;
       text-align: right;
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1.2rem;
     }
     h3 {

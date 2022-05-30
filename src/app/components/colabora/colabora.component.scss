@@ -6,8 +6,8 @@
   text-align: center;
   padding: 172px 10rem;
   align-items: center;
-  @include phone{
-      padding: 172px 2rem;
+  @include phone {
+    padding: 172px 2rem;
   }
   h1 {
     color: #1c6b30;
@@ -30,21 +30,33 @@
   }
 }
 
-.green-bg{
+.green-bg {
   position: absolute;
   left: 0;
-  width: 20%;
-  @include phone{
+  width: 15%;
+
+  @include tablet {
+    width: 20%;
+  }
+
+  @include phone {
+    width: 30%;
+  }
+
+  @include phone {
     width: 40%;
   }
 }
-.verdura-bg{
+.verdura-bg {
   position: absolute;
   right: 0;
-  @include phone{
-    width: 40%;
+  width: 15%;
+
+  @include tablet {
+    width: 20%;
+  }
+
+  @include phone {
+    width: 30%;
   }
 }
-
-
-
