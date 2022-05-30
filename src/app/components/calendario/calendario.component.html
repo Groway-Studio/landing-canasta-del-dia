@@ -5,22 +5,34 @@
     </div>
     <div class="row">
       <mat-tab-group animationDuration="0ms" [selectedIndex]="currentMonth">
-
-        <mat-tab *ngFor="let month of months" class="mat-tab-label-active"  label={{month.month}} >
+        <mat-tab
+          *ngFor="let month of months"
+          class="mat-tab-label-active"
+          label="{{ month.month }}"
+        >
           <div class="text-center">
-            <img src={{month.images}} class="calendar-img" alt="" />
-            <br>
-            <img src="{{month.img_mobile}}" class="calendar-mobile-img" alt="">
-            <br>
-            <div class="p-box" *ngIf="month.images.length === 0 ">
+            <img src="{{ month.images }}" class="calendar-img" alt="" />
+            <br />
+            <img
+              src="{{ month.img_mobile }}"
+              class="calendar-mobile-img"
+              alt=""
+            />
+            <br />
+            <div class="p-box" *ngIf="month.images.length === 0">
               <p>Pronto estará disponible este month.</p>
             </div>
-            <div *ngIf="month.images.length > 0 ">
-              <button class="btn btn-primary" mat-button (click)="openDialog(month.id -1)">Compartir</button>
+            <div *ngIf="month.images.length > 0">
+              <button
+                class="btn btn-primary"
+                mat-button
+                (click)="openDialog(month.id - 1)"
+              >
+                Compartir
+              </button>
             </div>
           </div>
         </mat-tab>
-
       </mat-tab-group>
     </div>
   </div>
